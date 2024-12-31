@@ -1,15 +1,18 @@
-class friend:
+"""
+We will create a class called Friend with name and number attribute then added friends objects to list.
+"""
+class Friend:
     def __init__(self, name, number):
-        self.name = name
-        self.number = number
+        self._name = name
+        self._number = number
 
-list_friend =[]
+friend_list =[]
 
-friend1 = friend("Raj",21)
-friend2 = friend("Jai",22)
+friend1 = Friend("Raj Kumar", 21)
+friend2 = Friend("Jai Kumar", 22)
 
 
-list_friend.append(friend1)
-list_friend.append(friend2)
+friend_list.append(friend1)
+friend_list.append(friend2)
 
 print(list_friend[1].name)
