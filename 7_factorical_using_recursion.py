@@ -4,6 +4,15 @@ while loop or for loop, another way is recursion.
 
 function call itself.
 - condition to stop the function like in case of factorial if n==0: return 1
+
+import sys
+
+def find_recursion_depth():
+    current = sys.getrecursionlimit()
+    sys.setrecursionlimit(current)
+    print(current)
+
+find_recursion_depth()
 '''
 
 def find_factorical(n):
